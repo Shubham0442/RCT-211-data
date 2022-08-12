@@ -1,0 +1,49 @@
+
+.mainContainer{
+    width: 90%;
+    margin: auto;
+    border: 1px solid gray;
+    display: flex; 
+}
+
+.recordsContainer{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+.recordsContainer > div{
+    border: 1px solid gray;
+}
+.filterContainer{
+    width: 20%;
+    border: 1px solid;
+}
+
+.filterContainer > div{
+    text-align: left;
+    padding-left: 20px;
+}
+
+@media only screen and (min-width:400px) and (max-width: 780px){
+    .recordsContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+}
+
+@media only screen and (min-width:70px) and (max-width: 400px){
+    .recordsContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+}
+

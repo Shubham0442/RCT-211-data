@@ -1,0 +1,53 @@
+
+.MainContainer{
+    width: 70%;
+    /* height: 750px; */
+    display: flex;
+    border: 1px solid red;
+    margin: auto;
+}
+
+.filterDiv{
+    width: 25%;
+    border: 1px solid rgb(27, 41, 235);
+}
+
+
+.MusicRecordsDiv{
+    width: 75%;
+    border: 1px solid red; 
+}
+
+.MusicRecordsDiv > div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.MusicRecordsDiv > div > div{
+    border: 2px solid green;
+}
+
+.MusicRecordsDiv > div > div img {
+    width: 150px;
+}
+
+@media only screen and (min-width: 490px) and (max-width: 780px) {
+    .MusicRecordsDiv > div{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: auto;
+    }
+
+}
+
+@media only screen and (min-width: 70px) and (max-width:  490px) {
+    .MusicRecordsDiv > div{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: auto;
+    }
+}
